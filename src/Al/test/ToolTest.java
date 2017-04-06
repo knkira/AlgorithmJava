@@ -4,9 +4,10 @@ import Al.util.Tool;
 
 public class ToolTest {
 	public static void main(String[] args) {
-		int a =10,b=5;
-		Tool.swap(a, b);
+		int[] a = Tool.radomArr(10000,10,10000);
 		
-		System.out.println(a+"-------"+b);
+		for (int i : a) {
+			System.out.print(i+",");
+		}	
 	}
 }	
